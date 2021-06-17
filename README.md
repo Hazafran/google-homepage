@@ -1,0 +1,1 @@
+I'm trying to copy the Google homepage as my first HTML/CSS project with Odin.
