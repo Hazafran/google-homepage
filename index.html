@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <head>
     <style>
+        * {
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 20px;
+        
+        }
+
+        .navmenu {
+            
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navmenu li {
+
+            /*float: left;*/
+            display: table-cell;
+            vertical-align: bottom;
+
+        }
+
+        .navmenu li a {
+
+            margin-left: 13px;
+            color: #000;
+
+        }
+
+        .navmenu li img {
+
+            margin-left: 13px;
+            border-radius: 50%;
+            
+
+        }
+
+        .navmenu a:link {
+
+            text-decoration: none;
+        }
+
+        .navmenu a:hover {
+            text-decoration: underline;
+        }
+
         #search {
-            main: 0 auto;
+            
             display: flex;
             flex-direction: row;
             justify-content: center;
+            margin-top: 15em;
+
         }
+
     </style>
 
 </head>
 <body>
+    <nav>
+
+        <ul class="navmenu" >
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+        </ul>
+
+        <ul class="navmenu">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li><img src="" alt="menu icon"></li>
+            <li><img src="img/avatar.png" alt="profile icon"></li>
+        </ul>
+
+    </nav>
+
     <div id="search">
         <img src="img/googlelogo.png" alt="Google logo">
+        <br>
+        <form></form>
     </div>
 </body>
