@@ -39,12 +39,6 @@
 
         }
 
-        .navmenu li img {
-
-            
-
-        }
-
         .navmenu a:link {
 
             text-decoration: none;
@@ -88,6 +82,14 @@
         }
 
         form {
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #searchbar {
             
             width: 100%;
             padding: 30px 0 0 0;
@@ -97,7 +99,7 @@
             
         }
 
-        form img {
+        #searchbar img {
 
             align-self: center;
             position: relative;
@@ -106,7 +108,7 @@
 
         }
 
-        input {
+        #searchfield {
 
             box-sizing: border-box;
             width: 100%;
@@ -138,10 +140,44 @@
 
         }
 
-        input:focus, input:hover {
+        #searchfield:focus, #searchfield:hover {
 
             outline: none;
             box-shadow: 0 0 10px -2px rgb(180, 180, 180);
+
+        }
+
+        #searchbuttons {
+
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+        }
+
+        .sbutton {
+
+            padding: 11px 16px;
+            margin: 0 6px 0 6px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            color: #5F6368;
+            background-color: #f2f2f2;
+            font-size: 14px;
+
+        }
+
+        .sbutton:hover {
+
+            border: 1px solid #c6c6c6;
+            box-shadow: 0 1px 1px rgb(0, 0, 0, 10%);
+            cursor: pointer;
+
+        }
+
+        .sbutton:active {
+
+            border: 1px solid blue;
 
         }
 
@@ -172,8 +208,20 @@
 
         <form>
 
-            <input type="text">
-            <img src="img/microphone-icon.png" alt="">
+            <div id="searchbar">
+
+                <input type="text" id="searchfield">
+                <img src="img/microphone-icon.png" alt="">
+
+            </div>
+
+            <div id="searchbuttons">
+
+                <input type="submit" class="sbutton" value="Google Search">
+                <input type="submit" class="sbutton" value="I'm Feeling Lucky">
+
+            </div>
+            
 
         </form>
 
