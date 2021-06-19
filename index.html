@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Google</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         * {
             font-size: 13px;
@@ -28,20 +29,18 @@
 
         .navmenu li {
 
-
+            margin-left: 16px;
 
         }
 
         .navmenu li a {
 
-            margin-left: 16px;
             color: #000;
 
         }
 
         .navmenu li img {
 
-            margin-left: 16px;
             
 
         }
@@ -53,6 +52,30 @@
 
         .navmenu a:hover {
             text-decoration: underline;
+        }
+
+        #profilelink {
+
+            margin: 0;
+
+        }
+
+        #profilelink img:hover {
+
+            box-shadow: 0 0 0 4px rgb(231, 231, 231);
+
+        }
+
+        #appsicon {
+
+            color:gray;
+
+        }
+
+        #appsicon:hover {
+
+            color: black;
+
         }
 
         #search {
@@ -137,8 +160,8 @@
         <ul class="navmenu">
             <li><a href="#">Gmail</a></li>
             <li><a href="#">Images</a></li>
-            <li><img src="https://via.placeholder.com/32x32" alt="menu icon"></li>
-            <li><img src="img/avatar.png" alt="profile icon" style=" border-radius: 50%"></li>
+            <li><a href=""><i class="material-icons" id="appsicon">apps</i></a></li>
+            <li><a href="http://www.azafranart.com" id="profilelink" target="_blank"><img src="img/avatar-azafran.png" alt="profile icon" style=" border-radius: 50%"></a></li>
         </ul>
 
     </nav>
