@@ -60,20 +60,35 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 15em;
+            margin-top: 15em
 
         }
 
         form {
-
+            
+            width: 100%;
             padding: 35px 0 0 0;
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
         }
 
         input {
 
-            width: 484px;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 586px;
+            min-width: 382px;
+            height: 48px;
+
+            /* --without box-sizing: border-box
+            width: 70%;
+            max-width: 484px;
+            min-width: 280px;
             height: 46px;
+            */
+
             border-radius: 25px;
             border-width: 0.1px;
             border-style: solid;
@@ -93,14 +108,6 @@
 
             outline: none;
             box-shadow: 0 0 10px -2px rgb(180, 180, 180);
-
-        }
-
-        @media (max-width: 600px) {
-
-            input {
-                width: 110%;
-            }
 
         }
 
